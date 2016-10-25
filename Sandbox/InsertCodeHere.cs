@@ -58,18 +58,22 @@ namespace Sandbox
             int totalVærdi = aListOfInt.Sum();
             Console.WriteLine("Case 6: The sum of all elements in aListofInt = {0}", totalVærdi);
 
-            
+
             // Case 7: Make some code that finds the 
             // average of the elements in the list, and prints the result
             // Tip: Think about how average is defined; then
             // you might reuse something from Case 6
 
-
+            double averageVærdi = aListOfInt.Average();
+            Console.WriteLine("Case 7: The Average of all elements in aListOfInt = {0}", averageVærdi);
 
             // [DIFFICULT]
             // Case 8: Make some code that finds the
             // smallest element in the list, and prints the result
             // Tip: Think in detail about how you would do this manually
+
+            double SmallestVærdi = aListOfInt.Min();
+            Console.WriteLine("Case 8: The lowest value of all the elements in aListOfInt = {0}", SmallestVærdi);
 
 
 
