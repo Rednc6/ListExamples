@@ -50,13 +50,22 @@ namespace Sandbox
                 int printNumbers = aListOfInt[i];
                 Console.WriteLine("Case 5: All the elements in aListOfInt = {0}", printNumbers);
             }
-
+      
 
             // Case 6: Make some code that finds the 
             // sum of the elements in the list, and prints the result
+            int sum;
+            sum = 0;
 
-            int totalVærdi = aListOfInt.Sum();
-            Console.WriteLine("Case 6: The sum of all elements in aListofInt = {0}", totalVærdi);
+            foreach (int p in aListOfInt)
+            {                
+                sum = sum + p;
+                
+            }
+            Console.WriteLine("Case 6: Sum of all the elements = {0}", sum);
+
+            //int totalVærdi = aListOfInt.Sum();
+            //Console.WriteLine("Case 6: The sum of all elements in aListofInt = {0}", totalVærdi);
 
 
             // Case 7: Make some code that finds the 
@@ -64,16 +73,36 @@ namespace Sandbox
             // Tip: Think about how average is defined; then
             // you might reuse something from Case 6
 
-            double averageVærdi = aListOfInt.Average();
-            Console.WriteLine("Case 7: The Average of all elements in aListOfInt = {0}", averageVærdi);
+            double avgSum;
+            avgSum = 0;
+            foreach (var p in aListOfInt)
+            {
+                avgSum = sum / aListOfInt.Count;
+
+            }
+            Console.WriteLine("Case 7: Average sum of all the elements = {0}", avgSum);
+            //double averageVærdi = aListOfInt.Average();
+            //Console.WriteLine("Case 7: The Average of all elements in aListOfInt = {0}", averageVærdi);
 
             // [DIFFICULT]
             // Case 8: Make some code that finds the
             // smallest element in the list, and prints the result
             // Tip: Think in detail about how you would do this manually
 
-            double SmallestVærdi = aListOfInt.Min();
-            Console.WriteLine("Case 8: The lowest value of all the elements in aListOfInt = {0}", SmallestVærdi);
+            
+            int minValue = aListOfInt[0];
+            foreach (var p in aListOfInt)
+            {
+                if(minValue > p)
+                {
+                    minValue = p;
+                }
+                   
+            }
+            Console.WriteLine("Minimum value in elements = {0 }", minValue);
+
+            //int SmallestVærdi = aListOfInt.Min();
+            //Console.WriteLine("Case 8: The lowest value of all the elements in aListOfInt = {0}", SmallestVærdi);
 
 
 
