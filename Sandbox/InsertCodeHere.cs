@@ -54,11 +54,11 @@ namespace Sandbox
 
             // Case 6: Make some code that finds the 
             // sum of the elements in the list, and prints the result
-            int sum;
-            sum = 0;
-
+            int sum = 0;
+            
             foreach (int p in aListOfInt)
-            {                
+            {
+                                
                 sum = sum + p;
                 
             }
